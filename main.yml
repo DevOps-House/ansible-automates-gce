@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Launch/Destroy instances
+    gce:
+      instance_names: "{{name}}"
+      machine_type: "{{ machine_type }}"
+      image: "{{ image }}"
+      state: "{{state}}"
