@@ -2,3 +2,4 @@
 machine_type: n1-standard-1
 image: debian-7
 state: present
+name: ansinode
